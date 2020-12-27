@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>USBCDCEthernet</string>
+	<key>CFBundleGetInfoString</key>
+	<string>1.1.0, Apple USB Ethernet driver</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.driver.dts.USBCDCEthernet</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>USBCDCEthernet</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.1.0</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>USBCDCEthernet</key>
+		<dict>
+			<key>AllowGigabit</key>
+			<integer>0</integer>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.dts.USBCDCEthernet</string>
+			<key>Chip</key>
+			<string>9700</string>
+			<key>IOClass</key>
+			<string>com_apple_driver_dts_USBCDCEthernet</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>InputBuffers</key>
+			<integer>64</integer>
+			<key>OutputBuffers</key>
+			<integer>64</integer>
+			<key>bConfigurationValue</key>
+			<integer>1</integer>
+			<key>bInterfaceNumber</key>
+			<integer>0</integer>
+			<key>idProduct</key>
+			<integer>38656</integer>
+			<key>idVendor</key>
+			<integer>4070</integer>
+		</dict>
+	</dict>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.iokit.IONetworkingFamily</key>
+		<string>1.1</string>
+		<key>com.apple.iokit.IOUSBFamily</key>
+		<string>1.9</string>
+		<key>com.apple.kpi.bsd</key>
+		<string>8.0.0</string>
+		<key>com.apple.kpi.iokit</key>
+		<string>8.0.0</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>8.0.0</string>
+		<key>com.apple.kpi.mach</key>
+		<string>8.0.0</string>
+		<key>com.apple.kpi.unsupported</key>
+		<string>8.0.0</string>
+	</dict>
+	<key>OSBundleRequired</key>
+	<string>Network-Root</string>
+</dict>
+</plist>
